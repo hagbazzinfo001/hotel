@@ -145,7 +145,7 @@ section {
     auto-fit,
     minmax(400px, 1fr)
   ); /* Corrected to fit properly */
-  margin: 2rem auto 7rem;
+  margin: 2rem auto  ;
   width: 90%;
   /* padding: 2rem   ; */
 }
@@ -153,12 +153,16 @@ section {
 .container {
   position: relative;
   width:  90%;
+  /* padding: auto; */
+  align-content: center;
+
 }
 
 .imges {
-  /* width: 100%; */
+  width: 90%;
   display: block;
   border-radius: 8px;
+  margin:auto;
 }
 
 .overlay {
