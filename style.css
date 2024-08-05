@@ -147,15 +147,16 @@ section {
   ); /* Corrected to fit properly */
   margin: 2rem auto 7rem;
   width: 90%;
+  /* padding: 2rem   ; */
 }
 
 .container {
   position: relative;
-  width: 100%;
+  width:  90%;
 }
 
 .imges {
-  width: 100%;
+  /* width: 100%; */
   display: block;
   border-radius: 8px;
 }
@@ -182,6 +183,7 @@ section {
     bottom: 12rem; /* Set bottom position for larger screens */
     font-size: 2rem; /* Adjusted font size for larger screens */
   }
+  
 }
 .ovbtn {
   position: absolute;
