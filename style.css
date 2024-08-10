@@ -476,6 +476,10 @@ place-items: center;
      grid-template-columns:  1fr 1fr;
      gap:0.1rem
    } 
+   .form-class ::placeholder{
+    font-size: 1.5rem;
+    padding: 0;
+   }
 /*  
     #container button {
        font-size: 1.3rem;
