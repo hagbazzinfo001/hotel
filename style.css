@@ -3,12 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 footer {
   background-color: black;
   color: white;
   width: 100%;
   padding: 2.5rem;
+ 
 }
 #footer-item {
   display: grid;
@@ -18,7 +18,7 @@ footer {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   padding: 2.5rem;
 }
-button {
+ button{
   width: 12rem;
   height: 3rem;
   border-radius: 12px;
@@ -28,7 +28,7 @@ button {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
   font-weight: 500;
-}
+} 
 input {
   width: 100%;
   max-width: 12rem;
@@ -123,16 +123,30 @@ ul {
   color: #957554;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 45px;
+  font-size: 2.5rem;
   font-weight: 500;
   text-align: center;
   margin: 3rem auto;
+
 }
+ @media (max-width: 480px) {
+  #sediv p{
+  color: #957554;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+ }
+} 
 #sediv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+#sediv button{
+  border: #dfaa5b;
 }
 /* section{
          display: grid;
@@ -148,8 +162,7 @@ ul {
   height: 35rem;
   margin: 0;
 }
-
-header {
+header{
   color: #957554;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -163,14 +176,6 @@ body {
   padding: 0;
   /* font-family: Arial, sans-serif; */
 }
-
-/* section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
- }  */
 section {
   display: grid;
   gap: 3rem;
@@ -178,26 +183,24 @@ section {
     auto-fit,
     minmax(400px, 1fr)
   ); /* Corrected to fit properly */
+  place-items: center;
   margin: 2rem auto  7rem ;
   width: 90%;
   /* padding: 2rem   ; */
 }
 
-.container {
+.container{
   position: relative;
   width:  90%;
-  /* padding: auto; */
+  padding: auto;
   align-content: center;
-
 }
-
 .imges {
   width: 100%;
   display: block;
   border-radius: 8px;
   /* margin:auto; */
 }
-
 .overlay {
   position: absolute;
   bottom: 12rem;
@@ -215,12 +218,63 @@ section {
   font-weight: 500;
 }
 /* Media query for larger screens */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .overlay {
     bottom: 12rem; /* Set bottom position for larger screens */
     font-size: 2rem; /* Adjusted font size for larger screens */
+  } 
+   /* .imges {
+    width: 3rem;
+    display: block;
+    border-radius: 8px;
+   margin:auto; */
   }
-}
+  @media (max-width: 480px) {
+    section {
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(400px, 1fr)
+      ); /* Corrected to fit properly */
+      place-items: center;
+      /* margin: 2rem auto  7rem ; */
+      width: 100%;
+      /* padding: 2rem   ; */
+    }
+    
+    .container {
+      position: relative;
+      width:  80%;
+      padding: auto;
+      align-content: center;
+    }
+    
+    .imges {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      /* margin:auto; */
+      height: 25rem;
+    }
+    
+    .overlay {
+      position: absolute;
+      bottom: 12rem;
+      left: 50%;
+      transform: translateX(-50%);
+      /* background-color: rgba(245, 242, 242, 0); */
+      color: rgb(24, 22, 22);
+      padding: 10px;
+      border-radius: 4px;
+      text-align: center;
+      width: calc(100% - 20px);
+      color: #fff;
+      font-family: Ubuntu;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+       } 
 
 .ovbtn {
   position: absolute;
@@ -245,7 +299,7 @@ a {
 }
 nav a {
   text-decoration: none;
-  color: #dfaa5b;
+  /* color: #dfaa5b; */
 }
 .ovbtn:hover {
   background-color: #dfaa5b;
@@ -300,7 +354,7 @@ main {
 
 #figdiv {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 2rem;
   justify-content: center;
   align-items: center;
@@ -332,14 +386,35 @@ figure figcaption {
   text-align: center;
   margin: 3rem;
 }
-/* 
-header {
-  width: 100%;
-  background-color: white;
-  margin-top: 3rem;
-  text-align: center;
-} */
 
+@media (max-width: 480px) {
+  #figdiv {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  #main-facilitie {
+    color: #957554;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding-block: 2%;
+    /* align-self: center; */
+    text-align: center;
+    margin: 1.5rem;
+  }
+    } 
 header p {
   background-image: url("./download\ 1\ \(1\).png");
   background-repeat: no-repeat;
@@ -352,7 +427,7 @@ header p {
 nav {
   margin: 2rem 0;
 }
-nav ul {
+#nav ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -360,17 +435,15 @@ nav ul {
   color: #957554;
   background-color: white;
   text-decoration: none;
-}
+} 
+
 #container form {
   background-color: black;
-  display: flex;
-  /* flex-direction: row; */
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  /* padding: 1rem; */
-}
+  display: grid;
+grid-template-columns: repeat(4, 1fr);
+   /* gap: .5rem; */
+place-items: center;
+ }
 .form-class {
   display: flex;
   background: white;
@@ -386,22 +459,38 @@ nav ul {
   padding: 0.5rem;
   margin: 0;
 }
-#container button {
+ #container button {
   border: none;
-  /* background-color: #dfaa5b; */
+  background-color: #dfaa5b;
   color: white;
   cursor: pointer;
   padding: 1rem;
   margin: 0;
-  height: 5rem;
+  height: 4rem;
   background: #dfaa5b;
   width: auto;
+} 
+@media (max-width: 480px) {
+  #container form {
+     display: grid;
+     grid-template-columns:  1fr 1fr;
+     gap:0.1rem
+   } 
+/*  
+    #container button {
+       font-size: 1.3rem;
+    } */
 }
 @media (max-width: 768px) {
   #footer-item {
     gap: 2rem;
     grid-template-columns: 1fr;
   }
+  #container button {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+
+ }
 
   .overlay {
     bottom: 10rem;
@@ -419,3 +508,4 @@ nav ul {
     margin: 2rem 1rem;
   }
 }
+ 
